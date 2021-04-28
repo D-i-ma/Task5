@@ -9,6 +9,11 @@ public class QuadraticEquation {
         if (D > 0){
             double x1 = (-b-sqrt(D))/2*a;
             double x2 = (-b+sqrt(D))/2*a;
+            if (x1 >x2){
+                double min = x1;
+                x1 = x2;
+                x2 = min;
+            }
             return new double[] {x1, x2};
         }else if (D == 0){
             double x3 = -b/2*a;
