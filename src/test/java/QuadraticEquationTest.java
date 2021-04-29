@@ -14,7 +14,7 @@ class QuadraticEquationTest {
         if (n == 2){
             assertArrayEquals(new double[]{2, 5}, x);
         }else{
-            assertArrayEquals(new double[]{-2}, x);
+            assertArrayEquals(new double[]{2}, x);
         }
     }
 }
